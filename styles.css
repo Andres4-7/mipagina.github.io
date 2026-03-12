@@ -1,35 +1,37 @@
 body{
 margin:0;
 font-family:Arial;
-background:#111;
+background:#0f172a;
 color:white;
 }
 
 /* NAVBAR */
 
-header{
-background:#0a0a0a;
-padding:15px;
-}
-
-nav{
+.navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:15px;
+background:#020617;
 }
 
-nav ul{
-list-style:none;
+.menu{
 display:flex;
+list-style:none;
 gap:20px;
 }
 
-nav a{
-color:white;
+.menu a{
 text-decoration:none;
+color:white;
+font-weight:bold;
 }
 
-/* BUSCADOR */
+.menu a:hover{
+color:#38bdf8;
+}
+
+/* SEARCH */
 
 .search input{
 padding:6px;
@@ -40,33 +42,75 @@ border:none;
 .search button{
 padding:6px 10px;
 border:none;
-border-radius:5px;
 cursor:pointer;
+background:#38bdf8;
+border-radius:5px;
 }
 
-/* CONTENIDO */
+/* HERO */
+
+.hero{
+text-align:center;
+padding:60px;
+background:linear-gradient(45deg,#0ea5e9,#1e293b);
+}
+
+/* GAMES */
 
 main{
-padding:20px;
+padding:30px;
 }
 
 .games{
 display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
 .card{
-background:#1c1c1c;
-padding:15px;
+background:#1e293b;
 border-radius:10px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+}
+
+.card p{
+padding:0 10px 10px;
 }
 
 /* FOOTER */
 
 footer{
-background:#000;
-text-align:center;
-padding:20px;
+background:#020617;
 margin-top:40px;
+padding:30px;
+}
+
+.footer-content{
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+}
+
+footer h3{
+color:#38bdf8;
+}
+
+.copyright{
+text-align:center;
+margin-top:20px;
 }
