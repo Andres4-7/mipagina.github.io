@@ -9,43 +9,70 @@
 <body>
 
 <header>
-<nav>
-<h2>🎮 Zona Gamer</h2>
+<nav class="navbar">
 
-<ul>
+<h1 class="logo">🎮 Zona Gamer</h1>
+
+<ul class="menu">
 <li><a href="#">Inicio</a></li>
-<li><a href="#">Juegos</a></li>
+<li><a href="#juegos">Juegos</a></li>
 <li><a href="#">Noticias</a></li>
 <li><a href="#">Contacto</a></li>
 </ul>
 
 <div class="search">
-<input type="text" placeholder="Buscar juego...">
-<button>🔍</button>
+<input type="text" id="searchInput" placeholder="Buscar juego...">
+<button onclick="buscarJuego()">🔍</button>
 </div>
 
 </nav>
 </header>
 
+<section class="hero">
+<h2>Los mejores juegos de PS4 y PS5</h2>
+<p>Noticias, recomendaciones y novedades del mundo gamer</p>
+</section>
+
 <main>
 
-<h1>Juegos populares PS4 y PS5</h1>
+<h2 id="juegos">🔥 Juegos populares</h2>
 
 <div class="games">
 
 <div class="card">
-<h3>God of War</h3>
-<p>Uno de los mejores juegos de acción.</p>
+<img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
+<h3>God of War Ragnarök</h3>
+<p>Aventura épica de Kratos y Atreus.</p>
 </div>
 
 <div class="card">
-<h3>Spider-Man</h3>
-<p>Aventura del superhéroe en Nueva York.</p>
+<img src="https://images.unsplash.com/photo-1542751371-adc38448a05e">
+<h3>Spider-Man 2</h3>
+<p>Explora Nueva York como el héroe arácnido.</p>
 </div>
 
 <div class="card">
-<h3>Horizon</h3>
-<p>Explora un mundo dominado por máquinas.</p>
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420">
+<h3>Horizon Forbidden West</h3>
+<p>Un mundo dominado por máquinas.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8">
+<h3>Gran Turismo</h3>
+<p>Simulación realista de carreras.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1580327332925-a10e6cb11baa">
+<h3>Call of Duty</h3>
+<p>Acción y guerra intensa.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1">
+<h3>Resident Evil</h3>
+<p>Horror y supervivencia.</p>
 </div>
 
 </div>
@@ -53,9 +80,35 @@
 </main>
 
 <footer>
-<p>© 2026 Zona Gamer | Noticias PS4 y PS5</p>
-<p>Instagram | YouTube | Discord</p>
+
+<div class="footer-content">
+
+<div>
+<h3>Zona Gamer</h3>
+<p>Web dedicada a juegos de PS4 y PS5.</p>
+</div>
+
+<div>
+<h3>Redes</h3>
+<p>Instagram</p>
+<p>YouTube</p>
+<p>Discord</p>
+</div>
+
+<div>
+<h3>Contacto</h3>
+<p>correo@gamer.com</p>
+</div>
+
+</div>
+
+<p class="copyright">
+© 2026 Zona Gamer
+</p>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
